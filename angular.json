@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cfan.dev": {
+    "cfan": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cfan.dev:build:production"
+              "browserTarget": "cfan:build:production"
             },
             "development": {
-              "browserTarget": "cfan.dev:build:development"
+              "browserTarget": "cfan:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cfan.dev:build"
+            "browserTarget": "cfan:build"
           }
         },
         "test": {
@@ -106,5 +106,5 @@
       }
     }
   },
-  "defaultProject": "cfan.dev"
+  "defaultProject": "cfan"
 }
